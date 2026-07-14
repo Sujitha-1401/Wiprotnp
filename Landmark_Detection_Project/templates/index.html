@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Landmark Detection</title>
+    <link rel="stylesheet" href="/static/css/style.css" />
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Landmark Detection</h1>
+            <p>Upload an image of a landmark to identify it.</p>
+        </header>
+
+        <form method="post" enctype="multipart/form-data">
+            <input type="file" name="file" accept="image/*" required />
+            <button type="submit">Predict Landmark</button>
+        </form>
+
+        <footer>
+            <p>Built with TensorFlow, Flask, and OpenCV.</p>
+        </footer>
+    </div>
+</body>
+</html>
